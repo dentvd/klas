@@ -39,7 +39,7 @@ int main()
     {
         cout << "\t\t\t#>---------<Task 2 >---------<#" << endl;
         cout << "\t\t\t|    1 - Period numbers    |" << endl;
-        cout << "\t\t\t|    2 - Task_2            |" << endl;
+        cout << "\t\t\t|    2 - Paired numbers    |" << endl;
         cout << "\t\t\t|    3 - Task_3            |" << endl;
         cout << "\t\t\t|    4 - Task_4            |" << endl;
         cout << "\t\t\t|    5 - Task_5            |" << endl;
@@ -80,9 +80,46 @@ int main()
             }
 
         }break;
-        }
+        case 2:
+        {
+            int start, end, temp;
+            cout << "\tEnter start range=>";
+            cin >> start;
+            cout << "\tEnter finish range=>";
+            cin >> end;
+            cout << "\tPaired numbers:" << endl;
+            if (start > end)
+            {
+                temp = start;
+                start = end;
+                end = temp;
+            }
+
+            while (start != end + 1)
+            {
+
+
+                if (start % 2 == 0)
+                {
+
+                    cout << "\t" << start << endl;
+                }
+
+
+
+
+                start++;
+
+
+
+
+
+
+            }
+        }break;
         }return 0;
 
+        }
 
 
 
