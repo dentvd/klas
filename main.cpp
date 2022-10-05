@@ -23,10 +23,17 @@ int main()
     {
     case 1:
     {
-    
+      int i, sum = 0;
+      cout << "number=>";
+      cin >> i;
+      while (i != 500 + 1)
+      {
 
+          sum += i;
 
+          i++;
 
+      }cout << "sum  "<<sum;
 
         }break;
 
