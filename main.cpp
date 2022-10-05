@@ -210,12 +210,6 @@ int main()
             while (start != end + 1)
             {
 
-
-
-
-
-
-
                 sum += start;
 
                 start++;
@@ -223,7 +217,23 @@ int main()
             }
             cout << "\t" << sum;
         }break;
+        case 4:
+        {
+            int i, n, sum = 0;
 
+            do {
+                cin >> i;
+                sum += i;
+            } while (i != 0);
+            {
+
+                cout << "Sum" << sum;
+            }
+
+
+
+
+        }break;
 
 
 
