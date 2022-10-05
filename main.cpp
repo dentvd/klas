@@ -41,7 +41,7 @@ int main()
         cout << "\t\t\t|    1 - Period numbers    |" << endl;
         cout << "\t\t\t|    2 - Paired numbers    |" << endl;
         cout << "\t\t\t|    3 - Unpaired numbers  |" << endl;
-        cout << "\t\t\t|    4 - Task_4            |" << endl;
+        cout << "\t\t\t|    4 - Multiples of 7    |" << endl;
         cout << "\t\t\t|    5 - Task_5            |" << endl;
         cout << "\t\t\t|    6 - Task_6            |" << endl;
         cout << "\t\t\t|    7 - Task_7            |" << endl;
@@ -138,6 +138,44 @@ int main()
 
 
                 if (start % 2 != 0)
+                {
+
+                    cout << "\t" << start << endl;
+                }
+
+
+
+
+                start++;
+
+
+
+
+
+
+            }
+        }break;
+        case 4:
+        {
+            int start, end, temp;
+            cout << "\tEnter start range=>";
+            cin >> start;
+            cout << "\tEnter finish range=>";
+            cin >> end;
+
+            cout << "\tMultiples of 7:" << endl;
+            if (start > end)
+            {
+                temp = start;
+                start = end;
+                end = temp;
+            }
+
+            while (start != end + 1)
+            {
+
+
+                if (start % 7 == 0)
                 {
 
                     cout << "\t" << start << endl;
