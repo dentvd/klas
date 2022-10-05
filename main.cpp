@@ -190,7 +190,39 @@ int main()
         }break;
         }return 0;
 
-        }
+        }break;
+        case 3:
+        {
+            int start, end, temp, sum = 0, a;
+            cout << "\tEnter start range=>";
+            cin >> start;
+            cout << "\tEnter finish range=>";
+            cin >> end;
+
+            cout << "\tSum:" << endl;
+            if (start > end)
+            {
+                temp = start;
+                start = end;
+                end = temp;
+            }
+
+            while (start != end + 1)
+            {
+
+
+
+
+
+
+
+                sum += start;
+
+                start++;
+
+            }
+            cout << "\t" << sum;
+        }break;
 
 
 
