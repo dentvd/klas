@@ -42,11 +42,6 @@ int main()
         cout << "\t\t\t|    2 - Paired numbers    |" << endl;
         cout << "\t\t\t|    3 - Unpaired numbers  |" << endl;
         cout << "\t\t\t|    4 - Multiples of 7    |" << endl;
-        cout << "\t\t\t|    5 - Task_5            |" << endl;
-        cout << "\t\t\t|    6 - Task_6            |" << endl;
-        cout << "\t\t\t|    7 - Task_7            |" << endl;
-        cout << "\t\t\t|    8 - Task_8            |" << endl;
-        cout << "\t\t\t|    9 - Task_9            |" << endl;
         cout << "\t\t\t#>------------------------<#" << endl;
         cout << "\t\t\t|    Exit - 0              |" << endl;
         cout << "\t\t\t#>------------------------<#" << endl;
