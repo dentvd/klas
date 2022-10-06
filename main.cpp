@@ -261,6 +261,20 @@ int main()
             
              
         }break;
+        case 9:
+        {
+            int num;
+            cout << "Enter number: ";
+            cin >> num;
+
+            if (num > 0 && num < 11)
+            {
+                for (int i = 0; i < 11; i++)
+                cout << num << " x " << i << " = "<< num * i << std::endl;
+            }
+            else
+                cout << "Wrong input";
+        }break;
 
 
 
