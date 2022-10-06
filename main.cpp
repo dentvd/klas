@@ -190,54 +190,74 @@ int main()
         }break;
         }return 0;
 
-        }break;
-        case 3:
+    }break;
+    case 3:
+    {
+        int start, end, temp, sum = 0, a;
+        cout << "\tEnter start range=>";
+        cin >> start;
+        cout << "\tEnter finish range=>";
+        cin >> end;
+
+        cout << "\tSum:" << endl;
+        if (start > end)
         {
-            int start, end, temp, sum = 0, a;
-            cout << "\tEnter start range=>";
-            cin >> start;
-            cout << "\tEnter finish range=>";
-            cin >> end;
+            temp = start;
+            start = end;
+            end = temp;
+        }
 
-            cout << "\tSum:" << endl;
-            if (start > end)
-            {
-                temp = start;
-                start = end;
-                end = temp;
-            }
-
-            while (start != end + 1)
-            {
-
-                sum += start;
-
-                start++;
-
-            }
-            cout << "\t" << sum;
-        }break;
-        case 4:
+        while (start != end + 1)
         {
-            int i, n, sum = 0;
 
-            do {
-                cin >> i;
-                sum += i;
-            } while (i != 0);
-            {
+            sum += start;
 
-                cout << "Sum" << sum;
-            }
+            start++;
+
+        }
+        cout << "\t" << sum;
+    }break;
+    case 4:
+    {
+        int i, n, sum = 0;
+
+        do {
+            cin >> i;
+            sum += i;
+        } while (i != 0);
+        {
+
+            cout << "Sum" << sum;
+        }
 
 
 
 
-        }break;
+    }break;
+
+    case 5:
+    {
+        int start, sum = 0;
+        cout << "\tEnter start range=>";
+        cin >> start;
+
+
+        cout << "\tSum:" << endl;
+
+
+        while (start != 501)
+        {
+
+            sum += start;
+
+            start++;
+
+        }
+        cout << "\t" << sum;
 
 
 
+    } break;
 
-        return 0;
-    }
-    }
+    }return 0;
+}
