@@ -261,6 +261,27 @@ int main()
             
              
         }break;
+        case 8:
+        {int a, i, s;
+            s = 1; 
+            cout << "Enter first number=> ";
+            cin >> a; 
+
+            for (i = a; i <= 20; i++) 
+
+            {
+
+
+
+                s = s * i; 
+
+            }
+
+
+
+            cout << " Product of numbers => " << s; 
+        }break;
+
         case 9:
         {
             int num;
