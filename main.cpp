@@ -23,221 +23,24 @@ int main()
     {
     case 1:
     {
-        int i = 0;
-        int a;
-        cout << "\tEnter number=>";
-        cin >> a;
-        while (i <= a)
+
+        system("color 0A");
+        srand(time(0));
+        const uint32_t size = 6;
+        long long arr[size];
+
+        for (int i = 0; i < size; i++)
         {
-            cout << "  " << i;
-            i++;
+            cout << " Mounts " << i + 1 << "=> ";
+            cin >> arr[i];
         }
-
-
+        long long sum = 0;
+        for (size_t i = 0; i < size; i++)
+        {
+            sum += arr[i];
+        }cout << "  Sum = " << sum << endl;
     }break;
-    case 2:
-    {
-        cout << "\t\t\t#>---------<Task 2 >------<#" << endl;
-        cout << "\t\t\t|    1 - Period numbers    |" << endl;
-        cout << "\t\t\t|    2 - Paired numbers    |" << endl;
-        cout << "\t\t\t|    3 - Unpaired numbers  |" << endl;
-        cout << "\t\t\t|    4 - Multiples of 7    |" << endl;
-        cout << "\t\t\t#>------------------------<#" << endl;
-        cout << "\t\t\t|    Exit - 0              |" << endl;
-        cout << "\t\t\t#>------------------------<#" << endl;
-        cout << "\t\t\tEnter task =>";
-        int number;
-        cin >> number;
-        system("cls");
-        switch (number)
-        {
-        case 1:
-        {
-            int start, end, temp;
+   
 
-            cout << "\tEnter start range=>";
-            cin >> start;
-            cout << "\tEnter finish range=>";
-            cin >> end;
-            if (start > end)
-            {
-                temp = start;
-                start = end;
-                end = temp;
-            }
-            cout << "\tPeriod numbers:" << endl;
-            while (start != end + 1)
-            {
-
-                cout << start << "  " << endl;
-                start++;
-
-            }
-
-        }break;
-        case 2:
-        {
-            int start, end, temp;
-            cout << "\tEnter start range=>";
-            cin >> start;
-            cout << "\tEnter finish range=>";
-            cin >> end;
-            cout << "\tPaired numbers:" << endl;
-            if (start > end)
-            {
-                temp = start;
-                start = end;
-                end = temp;
-            }
-
-            while (start != end + 1)
-            {
-
-
-                if (start % 2 == 0)
-                {
-
-                    cout << "\t" << start << endl;
-                }
-
-
-
-
-                start++;
-
-
-
-
-
-
-            }
-        }break;
-        case 3:
-        {
-            int start, end, temp;
-            cout << "\tEnter start range=>";
-            cin >> start;
-            cout << "\tEnter finish range=>";
-            cin >> end;
-
-            cout << "\tUnpaired numbers:" << endl;
-            if (start > end)
-            {
-                temp = start;
-                start = end;
-                end = temp;
-            }
-
-            while (start != end + 1)
-            {
-
-
-                if (start % 2 != 0)
-                {
-
-                    cout << "\t" << start << endl;
-                }
-
-
-
-
-                start++;
-
-
-
-
-
-
-            }
-        }break;
-        case 4:
-        {
-            int start, end, temp;
-            cout << "\tEnter start range=>";
-            cin >> start;
-            cout << "\tEnter finish range=>";
-            cin >> end;
-
-            cout << "\tMultiples of 7:" << endl;
-            if (start > end)
-            {
-                temp = start;
-                start = end;
-                end = temp;
-            }
-
-            while (start != end + 1)
-            {
-
-
-                if (start % 7 == 0)
-                {
-
-                    cout << "\t" << start << endl;
-                }
-
-
-
-
-                start++;
-
-
-
-
-
-
-            }
-        }break;
-        }return 0;
-
-        }break;
-        case 3:
-        {
-            int start, end, temp, sum = 0, a;
-            cout << "\tEnter start range=>";
-            cin >> start;
-            cout << "\tEnter finish range=>";
-            cin >> end;
-
-            cout << "\tSum:" << endl;
-            if (start > end)
-            {
-                temp = start;
-                start = end;
-                end = temp;
-            }
-
-            while (start != end + 1)
-            {
-
-                sum += start;
-
-                start++;
-
-            }
-            cout << "\t" << sum;
-        }break;
-        case 4:
-        {
-            int i, n, sum = 0;
-
-            do {
-                cin >> i;
-                sum += i;
-            } while (i != 0);
-            {
-
-                cout << "Sum" << sum;
-            }
-
-
-
-
-        }break;
-
-
-
-
-        return 0;
-    }
-    }
+    }return 0;
+}
