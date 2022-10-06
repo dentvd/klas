@@ -64,20 +64,17 @@ int main()
              
         }break;
         case 8:
-        {int a, i, s;
-            s = 1; 
+        {
+            uint64_t a, mul = 1;
+           
             cout << "Enter first number=> ";
             cin >> a; 
 
-            for (i = a; i <= 20; i++) 
-
+            for (uint64_t i = a; i <= 20; i++)
             {
-
-
-
-                s = s * i; 
-
+                mul *= i;
             }
+            cout << "Mul = " << mul << endl;
 
 
 
