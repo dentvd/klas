@@ -246,6 +246,21 @@ int main()
                 n = n * a;
             cout <<"\t"<<a << "  to degree  " << b << "=> " << n;
         }break;
+        case 7:
+        {int start = 1, end, sum=0;
+        end = 500;
+            while (start != end + 1)
+            {
+
+                sum += start;
+
+                start++;
+
+            }
+            cout << "\t" << sum/1000<<" <= arithmetic mean from 1 to 1000";
+            
+             
+        }break;
 
 
 
