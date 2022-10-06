@@ -234,6 +234,18 @@ int main()
 
 
         }break;
+        case 6:
+        {
+            int i, n, a, b;
+            cout << "\tEnter number=> ";
+            cin >> a;
+            cout << "\tEnter degree=>";
+            cin >> b;
+            n = a;
+            for (i = 1; i < b; i++)
+                n = n * a;
+            cout <<"\t"<<a << "  to degree  " << b << "=> " << n;
+        }break;
 
 
 
