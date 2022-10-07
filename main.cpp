@@ -36,7 +36,7 @@ int main()
       }cout << "sum  "<<sum;
 
         }break;
-        case 6:
+        case 2:
         {
             int i, n, a, b;
             cout << "\tEnter number=> ";
@@ -48,22 +48,21 @@ int main()
                 n = n * a;
             cout <<"\t"<<a << "  to degree  " << b << "=> " << n;
         }break;
-        case 7:
-        {int start = 1, end, sum=0;
-        end = 500;
-            while (start != end + 1)
-            {
 
-                sum += start;
-
-                start++;
-
-            }
-            cout << "\t" << sum/1000<<" <= arithmetic mean from 1 to 1000";
+        case 3:
+        {int i,sum=0;
+       
+        for (i = 1; i <= 1000; i++)
+        {
+            sum += i;
+            
+           }
+        cout << "\t" << sum / 1000 << " <= arithmetic mean from 1 to 1000" << endl;;
+            
             
              
         }break;
-        case 8:
+        case 4:
         {
             uint64_t a, mul = 1;
            
@@ -78,10 +77,10 @@ int main()
 
 
 
-            cout << " Product of numbers => " << s; 
+             
         }break;
 
-        case 9:
+        case 5:
         {
             int num;
             cout << "Enter number: ";
@@ -94,6 +93,43 @@ int main()
             }
             else
                 cout << "Wrong input";
+        }break;
+        case 6:
+        {
+            int n1 = 0, n2 = 0, n3 = 0;
+
+            int count = 0;
+            for (int i = 100; i <= 999; i++)
+            {
+                n1 = i / 100;
+                n2 = (i / 10) % 10;
+                n3 = i % 10;
+
+                if (n1 != n2 && n2 != n3 && n1 != n3)
+                {
+                    count++;
+                }
+            }
+            cout << count << endl;
+        }break;
+
+        case 7:
+        {
+            int n1 = 0, n2 = 0, n3 = 0;
+
+            int count = 0;
+            for (int i = 100; i <= 999; i++)
+            {
+                n1 = i / 100;
+                n2 = (i / 10) % 10;
+                n3 = i % 10;
+
+                if (n1 == n2 || n2 == n3 || n1 == n3)
+                {
+                    count++;
+                }
+            }
+            cout << count << endl;
         }break;
 
 
