@@ -40,7 +40,27 @@ int main()
             sum += arr[i];
         }cout << "  Sum = " << sum << endl;
     }break;
-   
+    case 2:
+    {
+        system("color 0A");
+        srand(time(0));
+        const uint32_t size = 5;
+        long long arr[size];
+        for (int i = 0; i < size; i++)
+        {
+            cin >> arr[i];
+        }
+        for (int i = 0; i < size; i++)
+        {
+
+            cout << arr[i] << "  ";
+        }
+        cout << endl;
+        for (size_t i = size - 1; i != -1; i--)
+        {
+            cout << arr[i] << "  ";
+        }cout << endl;
+    }break;
 
     }return 0;
 }
